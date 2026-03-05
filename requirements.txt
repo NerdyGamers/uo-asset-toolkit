@@ -1,0 +1,22 @@
+# UO Asset Toolkit - Python Dependencies
+
+# GUI
+PyQt6>=6.6.0
+
+# Image processing
+Pillow>=10.0.0
+
+# Config parsing
+PyYAML>=6.0
+
+# Parallel processing (stdlib concurrent.futures used, but this for extras)
+multiprocess>=0.70
+
+# Hashing / integrity
+# (hashlib is stdlib - no extra install needed)
+
+# Optional: progress bars
+tqdm>=4.66.0
+
+# Optional: colored terminal output
+colorama>=0.4.6
