@@ -1,0 +1,35 @@
+# UO Asset Toolkit - Configuration
+# Edit these paths to match your client installations.
+
+client:
+  clean_path: "C:/Program Files (x86)/Ultima Online Enhanced/"
+  modded_path: "C:/UO/CustomShard/"
+
+output:
+  base_dir: "output"
+  items_dir: "output/items"
+  gumps_dir: "output/gumps"
+  textures_dir: "output/textures"
+  modpack_dir: "output/modpack"
+
+scanner:
+  parallel_workers: 4
+  use_index: true          # true = smart index-driven scan, false = brute-force range
+  art_range_start: 0x0000
+  art_range_end: 0x4000
+  gump_range_start: 0x0000
+  gump_range_end: 0x10000
+
+cache:
+  enabled: true
+  cache_dir: ".cache"
+  hash_algorithm: "sha256"  # md5 | sha1 | sha256
+
+modpack:
+  name: "Custom Shard Graphics"
+  author: ""
+  version: "1.0.0"
+
+logging:
+  level: "INFO"   # DEBUG | INFO | WARNING | ERROR
+  log_file: "toolkit.log"
